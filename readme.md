@@ -21,6 +21,8 @@
 
 - [ ] windows sdk
 - [ ] Visual Studio Build Tools(主要是cl.exe编译器)
+- [ ] 修改build.bat中windows sdk路径
+  ![build.bat修改部分](assets/build-bat.png)  
 
 
 ### 编译
@@ -39,7 +41,10 @@ build.bat
 
 ### 使用
 
-[使用说明](docs/USAGE.md)  
+运行该cli程序会有help提示：
+![使用说明](assets/usage.png)  
+
+如果想看具体的使用说明：[usage book](docs/USAGE.md)  
 
 <br>
 
