@@ -1,0 +1,361 @@
+=== Wi-Fi Direct CLI Tool Build Script ===
+
+Detected Windows SDK version: 10.0.26100.0
+C++/WinRT headers found.
+
+Compiling main.cpp...
+
+main.cpp
+main.obj : error LNK2019: 无法解析的外部符号 __invalid_parameter_noinfo，函数 "public: __thiscall winrt::hstring::hstring(class std::basic_string_view<wchar_t,struct std::char_traits<wchar_t> > const &)" (??0hstring@winrt@@QAE@ABV?$basic_string_view@_WU?$char_traits@_W@std@@@std@@@Z) 中引用了该符号
+libvcruntime.lib(per_thread_data.obj) : error LNK2001: 无法解析的外部符号 _calloc
+libcpmt.lib(cond.obj) : error LNK2001: 无法解析的外部符号 _calloc
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _calloc
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _calloc
+libcpmt.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 _calloc
+main.obj : error LNK2001: 无法解析的外部符号 _calloc
+libcpmt.lib(mutex.obj) : error LNK2001: 无法解析的外部符号 _calloc
+libcpmt.lib(xnotify.obj) : error LNK2001: 无法解析的外部符号 _calloc
+libcpmt.lib(_tolower.obj) : error LNK2001: 无法解析的外部符号 _calloc
+libvcruntime.lib(per_thread_data.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(StlCompareStringA.obj) : error LNK2001: 无法解析的外部符号 _free
+LIBCMT.lib(delete_scalar.obj) : error LNK2001: 无法解析的外部符号 _free
+libvcruntime.lib(std_exception.obj) : error LNK2001: 无法解析的外部符号 _free
+libvcruntime.lib(std_type_info.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(StlLCMapStringA.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(xwcsxfrm.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(cond.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _free
+main.obj : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(mutex.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(locale0.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(wcin.obj) : error LNK2001: 无法解析的外部符号 _free
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(xstrcoll.obj) : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(xwcscoll.obj) : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(xstoul.obj) : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(xstoll.obj) : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(xstoull.obj) : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 __errno
+main.obj : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(xwctomb.obj) : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(xmbtowc.obj) : error LNK2001: 无法解析的外部符号 __errno
+libcpmt.lib(xstol.obj) : error LNK2001: 无法解析的外部符号 __errno
+main.obj : error LNK2019: 无法解析的外部符号 _frexp，函数 "protected: virtual class std::ostreambuf_iterator<wchar_t,struct std::char_traits<wchar_t> > __thiscall std::num_put<wchar_t,class std::ostreambuf_iterator<wchar_t,struct std::char_traits<wchar_t> > >::do_put(class std::ostreambuf_iterator<wchar_t,struct std::char_traits<wchar_t> >,class std::ios_base &,wchar_t,double)const " (?do_put@?$num_put@_WV?$ostreambuf_iterator@_WU?$char_traits@_W@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@_WU?$char_traits@_W@std@@@2@V32@AAVios_base@2@_WN@Z) 中引用了该符号
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _frexp
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _frexp
+main.obj : error LNK2019: 无法解析的外部符号 _wcstol，函数 "void __cdecl RunAdvertiserMode(void)" (?RunAdvertiserMode@@YAXXZ) 中引用了该符号
+libvcruntime.lib(per_thread_data.obj) : error LNK2001: 无法解析的外部符号 _abort
+libvcruntime.lib(frame.obj) : error LNK2001: 无法解析的外部符号 _abort
+libcpmt.lib(iosptrs.obj) : error LNK2001: 无法解析的外部符号 _abort
+libvcruntime.lib(purevirt.obj) : error LNK2001: 无法解析的外部符号 _abort
+libvcruntime.lib(ehhelpers.obj) : error LNK2001: 无法解析的外部符号 _abort
+libvcruntime.lib(trnsctrl.obj) : error LNK2001: 无法解析的外部符号 _abort
+main.obj : error LNK2001: 无法解析的外部符号 _abort
+libcpmt.lib(mutex.obj) : error LNK2001: 无法解析的外部符号 _abort
+libcpmt.lib(thread0.obj) : error LNK2001: 无法解析的外部符号 _abort
+libcpmt.lib(cond.obj) : error LNK2001: 无法解析的外部符号 _abort
+main.obj : error LNK2019: 无法解析的外部符号 _rand，函数 __catch$?RunConnectorMode@@YAXXZ$8 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _strtof，函数 "float __cdecl std::_Stofx_v3(char const *,char * *,int *)" (?_Stofx_v3@std@@YAMPBDPAPADPAH@Z) 中引用了该符号
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _strtof
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _strtof
+main.obj : error LNK2019: 无法解析的外部符号 _strtod，函数 "double __cdecl std::_Stodx_v3(char const *,char * *,int *)" (?_Stodx_v3@std@@YANPBDPAPADPAH@Z) 中引用了该符号
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _strtod
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _strtod
+libcpmt.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 _strtod
+main.obj : error LNK2019: 无法解析的外部符号 _strcspn，函数 "private: class std::ostreambuf_iterator<wchar_t,struct std::char_traits<wchar_t> > __thiscall std::num_put<wchar_t,class std::ostreambuf_iterator<wchar_t,struct std::char_traits<wchar_t> > >::_Fput_v3<0>(class std::ostreambuf_iterator<wchar_t,struct std::char_traits<wchar_t> >,class std::ios_base &,wchar_t,char const *,unsigned int,bool)const " (??$_Fput_v3@$0A@@?$num_put@_WV?$ostreambuf_iterator@_WU?$char_traits@_W@std@@@std@@@std@@ABE?AV?$ostreambuf_iterator@_WU?$char_traits@_W@std@@@1@V21@AAVios_base@1@_WPBDI_N@Z) 中引用了该符号
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _strcspn
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _strcspn
+libvcruntime.lib(undname.obj) : error LNK2001: 无法解析的外部符号 ___stdio_common_vsprintf_s
+main.obj : error LNK2001: 无法解析的外部符号 ___stdio_common_vsprintf_s
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 ___stdio_common_vsprintf_s
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 ___stdio_common_vsprintf_s
+libcpmt.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 ___stdio_common_vsprintf_s
+main.obj : error LNK2019: 无法解析的外部符号 _iswspace，函数 "struct winrt::hstring __cdecl winrt::impl::trim_hresult_message(wchar_t const * const,unsigned int)" (?trim_hresult_message@impl@winrt@@YA?AUhstring@2@QB_WI@Z) 中引用了该符号
+libvcruntime.lib(unexpected.obj) : error LNK2001: 无法解析的外部符号 _terminate
+main.obj : error LNK2001: 无法解析的外部符号 _terminate
+LIBCMT.lib(utility_desktop.obj) : error LNK2001: 无法解析的外部符号 _terminate
+libvcruntime.lib(ehhelpers.obj) : error LNK2001: 无法解析的外部符号 _terminate
+libvcruntime.lib(frame.obj) : error LNK2001: 无法解析的外部符号 _terminate
+main.obj : error LNK2019: 无法解析的外部符号 __beginthreadex，函数 "public: __thiscall std::thread::thread<class <lambda_74b1e4d52f31973cfb4265bc15d885c4>,0>(class <lambda_74b1e4d52f31973cfb4265bc15d885c4> &&)" (??$?0V<lambda_74b1e4d52f31973cfb4265bc15d885c4>@@$$V$0A@@thread@std@@QAE@$$QAV<lambda_74b1e4d52f31973cfb4265bc15d885c4>@@@Z) 中引用了该符号
+libcpmt.lib(cthread.obj) : error LNK2001: 无法解析的外部符号 __beginthreadex
+main.obj : error LNK2019: 无法解析的外部符号 _localeconv，函数 "private: class std::ostreambuf_iterator<wchar_t,struct std::char_traits<wchar_t> > __thiscall std::num_put<wchar_t,class std::ostreambuf_iterator<wchar_t,struct std::char_traits<wchar_t> > >::_Fput_v3<0>(class std::ostreambuf_iterator<wchar_t,struct std::char_traits<wchar_t> >,class std::ios_base &,wchar_t,char const *,unsigned int,bool)const " (??$_Fput_v3@$0A@@?$num_put@_WV?$ostreambuf_iterator@_WU?$char_traits@_W@std@@@std@@@std@@ABE?AV?$ostreambuf_iterator@_WU?$char_traits@_W@std@@@1@V21@AAVios_base@1@_WPBDI_N@Z) 中引用了该符号
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _localeconv
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _localeconv
+libcpmt.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 _localeconv
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_RoGetActivationFactory@12，函数 "struct winrt::hresult __cdecl winrt::impl::get_runtime_activation_factory_impl<1>(struct winrt::param::hstring const &,struct winrt::guid const &,void * *)" (??$get_runtime_activation_factory_impl@$00@impl@winrt@@YA?AUhresult@1@ABUhstring@param@1@ABUguid@1@PAPAX@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_RoOriginateLanguageException@12，函数 "private: void __thiscall winrt::hresult_error::originate(struct winrt::hresult,void *,struct winrt::impl::slim_source_location const &)" (?originate@hresult_error@winrt@@AAEXUhresult@2@PAXABUslim_source_location@impl@2@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_LoadLibraryExW@12，函数 "struct winrt::hresult __cdecl winrt::impl::get_runtime_activation_factory_impl<1>(struct winrt::param::hstring const &,struct winrt::guid const &,void * *)" (??$get_runtime_activation_factory_impl@$00@impl@winrt@@YA?AUhresult@1@ABUhstring@param@1@ABUguid@1@PAPAX@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_FreeLibrary@4，函数 "struct winrt::hresult __cdecl winrt::impl::get_runtime_activation_factory_impl<1>(struct winrt::param::hstring const &,struct winrt::guid const &,void * *)" (??$get_runtime_activation_factory_impl@$00@impl@winrt@@YA?AUhresult@1@ABUhstring@param@1@ABUguid@1@PAPAX@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_GetProcAddress@8，函数 "struct winrt::hresult __cdecl winrt::impl::get_runtime_activation_factory_impl<1>(struct winrt::param::hstring const &,struct winrt::guid const &,void * *)" (??$get_runtime_activation_factory_impl@$00@impl@winrt@@YA?AUhresult@1@ABUhstring@param@1@ABUguid@1@PAPAX@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_SetErrorInfo@8，函数 "struct winrt::hresult __cdecl winrt::impl::get_runtime_activation_factory_impl<1>(struct winrt::param::hstring const &,struct winrt::guid const &,void * *)" (??$get_runtime_activation_factory_impl@$00@impl@winrt@@YA?AUhresult@1@ABUhstring@param@1@ABUguid@1@PAPAX@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_GetErrorInfo@8，函数 "struct winrt::hresult __cdecl winrt::impl::get_runtime_activation_factory_impl<1>(struct winrt::param::hstring const &,struct winrt::guid const &,void * *)" (??$get_runtime_activation_factory_impl@$00@impl@winrt@@YA?AUhresult@1@ABUhstring@param@1@ABUguid@1@PAPAX@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_CoInitializeEx@8，函数 "void __cdecl winrt::init_apartment(enum winrt::apartment_type)" (?init_apartment@winrt@@YAXW4apartment_type@1@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_CoUninitialize@0，函数 "void __cdecl winrt::uninit_apartment(void)" (?uninit_apartment@winrt@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_CoCreateFreeThreadedMarshaler@8，函数 "public: __thiscall `int __cdecl winrt::impl::make_marshaler(struct winrt::impl::abi<struct winrt::Windows::Foundation::IUnknown,void>::type *,void * *)'::`2'::marshaler::marshaler(struct winrt::impl::abi<struct winrt::Windows::Foundation::IUnknown,void>::type *)" (??0marshaler@?1??make_marshaler@impl@winrt@@YAHPAUtype@?$abi@UIUnknown@Foundation@Windows@winrt@@X@23@PAPAX@Z@QAE@0@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_CoTaskMemAlloc@4，函数 "public: int __stdcall winrt::implements<struct winrt::impl::vector_impl<struct winrt::hstring,class std::vector<struct winrt::hstring,class std::allocator<struct winrt::hstring> >,struct winrt::impl::single_threaded_collection_base>,struct winrt::Windows::Foundation::Collections::IVector<struct winrt::hstring>,struct winrt::Windows::Foundation::Collections::IVectorView<struct winrt::hstring>,struct winrt::Windows::Foundation::Collections::IIterable<struct winrt::hstring> >::GetIids(unsigned int *,struct winrt::guid * *)" (?GetIids@?$implements@U?$vector_impl@Uhstring@winrt@@V?$vector@Uhstring@winrt@@V?$allocator@Uhstring@winrt@@@std@@@std@@Usingle_threaded_collection_base@impl@2@@impl@winrt@@U?$IVector@Uhstring@winrt@@@Collections@Foundation@Windows@3@U?$IVectorView@Uhstring@winrt@@@5673@U?$IIterable@Uhstring@winrt@@@5673@@winrt@@QAGHPAIPAPAUguid@2@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_SysFreeString@4，函数 "public: __thiscall winrt::hresult_error::hresult_error(struct winrt::hresult,struct winrt::take_ownership_from_abi_t,struct winrt::impl::slim_source_location const &)" (??0hresult_error@winrt@@QAE@Uhresult@1@Utake_ownership_from_abi_t@1@ABUslim_source_location@impl@1@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_SysStringLen@4，函数 "public: __thiscall winrt::hresult_error::hresult_error(struct winrt::hresult,struct winrt::take_ownership_from_abi_t,struct winrt::impl::slim_source_location const &)" (??0hresult_error@winrt@@QAE@Uhresult@1@Utake_ownership_from_abi_t@1@ABUslim_source_location@impl@1@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_MultiByteToWideChar@24，函数 "struct winrt::hstring __cdecl winrt::to_hstring<char const *,0>(char const * const &)" (??$to_hstring@PBD$0A@@winrt@@YA?AUhstring@0@ABQBD@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_HeapAlloc@12，函数 "struct winrt::impl::shared_hstring_header * __cdecl winrt::impl::precreate_hstring_on_heap(unsigned int)" (?precreate_hstring_on_heap@impl@winrt@@YAPAUshared_hstring_header@12@I@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_HeapFree@12，函数 "public: __thiscall std::_Ref_count_obj2<struct DiscoveredDevice>::_Ref_count_obj2<struct DiscoveredDevice><struct winrt::Windows::Devices::Enumeration::DeviceInformation const &>(struct winrt::Windows::Devices::Enumeration::DeviceInformation const &)" (??$?0ABUDeviceInformation@Enumeration@Devices@Windows@winrt@@@?$_Ref_count_obj2@UDiscoveredDevice@@@std@@QAE@ABUDeviceInformation@Enumeration@Devices@Windows@winrt@@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_GetProcessHeap@0，函数 "public: __thiscall std::_Ref_count_obj2<struct DiscoveredDevice>::_Ref_count_obj2<struct DiscoveredDevice><struct winrt::Windows::Devices::Enumeration::DeviceInformation const &>(struct winrt::Windows::Devices::Enumeration::DeviceInformation const &)" (??$?0ABUDeviceInformation@Enumeration@Devices@Windows@winrt@@@?$_Ref_count_obj2@UDiscoveredDevice@@@std@@QAE@ABUDeviceInformation@Enumeration@Devices@Windows@winrt@@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_FormatMessageW@28，函数 "public: struct winrt::hstring __thiscall winrt::hresult_error::message(void)const " (?message@hresult_error@winrt@@QBE?AUhstring@2@XZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_GetLastError@0，函数 "void __cdecl winrt::throw_last_error(struct winrt::impl::slim_source_location const &)" (?throw_last_error@winrt@@YAXABUslim_source_location@impl@1@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_InterlockedPushEntrySList@8，函数 "public: auto __thiscall winrt::impl::factory_cache_entry<struct winrt::Windows::Devices::WiFiDirect::WiFiDirectDevice,struct winrt::Windows::Devices::WiFiDirect::IWiFiDirectDeviceStatics2>::call<class <lambda_286c6adb293d21c8099be8a98eb856a9> &>(class <lambda_286c6adb293d21c8099be8a98eb856a9> &)" (??$call@AAV<lambda_286c6adb293d21c8099be8a98eb856a9>@@@?$factory_cache_entry@UWiFiDirectDevice@WiFiDirect@Devices@Windows@winrt@@UIWiFiDirectDeviceStatics2@2345@@impl@winrt@@QAE?A_PAAV<lambda_286c6adb293d21c8099be8a98eb856a9>@@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_CreateEventW@16，函数 "auto __cdecl winrt::impl::wait_for_completed<struct winrt::Windows::Foundation::IAsyncOperation<unsigned int> >(struct winrt::Windows::Foundation::IAsyncOperation<unsigned int> const &,unsigned int)" (??$wait_for_completed@U?$IAsyncOperation@I@Foundation@Windows@winrt@@@impl@winrt@@YA?A_PABU?$IAsyncOperation@I@Foundation@Windows@1@I@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_SetEvent@4，函数 "public: void __thiscall `auto __cdecl winrt::impl::wait_for_completed<struct winrt::Windows::Foundation::IAsyncOperation<unsigned int> >(struct winrt::Windows::Foundation::IAsyncOperation<unsigned int> const &,unsigned int)'::`2'::shared_type::operator()(struct winrt::Windows::Foundation::IAsyncOperation<unsigned int> const &,enum winrt::Windows::Foundation::AsyncStatus)" (??Rshared_type@?1???$wait_for_completed@U?$IAsyncOperation@I@Foundation@Windows@winrt@@@impl@winrt@@YA?A_PABU?$IAsyncOperation@I@Foundation@Windows@2@I@Z@QAEX0W4AsyncStatus@452@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_CloseHandle@4，函数 "auto __cdecl winrt::impl::wait_for_completed<struct winrt::Windows::Foundation::IAsyncOperation<unsigned int> >(struct winrt::Windows::Foundation::IAsyncOperation<unsigned int> const &,unsigned int)" (??$wait_for_completed@U?$IAsyncOperation@I@Foundation@Windows@winrt@@@impl@winrt@@YA?A_PABU?$IAsyncOperation@I@Foundation@Windows@1@I@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _WINRT_IMPL_WaitForSingleObject@8，函数 "auto __cdecl winrt::impl::wait_for_completed<struct winrt::Windows::Foundation::IAsyncOperation<unsigned int> >(struct winrt::Windows::Foundation::IAsyncOperation<unsigned int> const &,unsigned int)" (??$wait_for_completed@U?$IAsyncOperation@I@Foundation@Windows@winrt@@@impl@winrt@@YA?A_PABU?$IAsyncOperation@I@Foundation@Windows@1@I@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __dclass，函数 "bool __cdecl isfinite<double>(double)" (??$isfinite@N@@YA_NN@Z) 中引用了该符号
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 __dclass
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 __dclass
+main.obj : error LNK2019: 无法解析的外部符号 __ldclass，函数 "bool __cdecl isfinite<long double>(long double)" (??$isfinite@O@@YA_NO@Z) 中引用了该符号
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 __ldclass
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 __ldclass
+libcpmt.lib(xlock.obj) : error LNK2019: 无法解析的外部符号 __lock_locales，函数 "public: __thiscall std::_Lockit::_Lockit(int)" (??0_Lockit@std@@QAE@H@Z) 中引用了该符号
+libcpmt.lib(xlock.obj) : error LNK2019: 无法解析的外部符号 __unlock_locales，函数 "public: __thiscall std::_Lockit::~_Lockit(void)" (??1_Lockit@std@@QAE@XZ) 中引用了该符号
+libcpmt.lib(xtime.obj) : error LNK2019: 无法解析的外部符号 __imp__QueryPerformanceCounter@4，函数 __Query_perf_counter 中引用了该符号
+LIBCMT.lib(gs_support.obj) : error LNK2001: 无法解析的外部符号 __imp__QueryPerformanceCounter@4
+libcpmt.lib(xtime.obj) : error LNK2019: 无法解析的外部符号 __imp__QueryPerformanceFrequency@4，函数 __Query_perf_frequency 中引用了该符号
+libcpmt.lib(xtime.obj) : error LNK2019: 无法解析的外部符号 __imp__GetSystemTimePreciseAsFileTime@4，函数 __Xtime_get_ticks 中引用了该符号
+libcpmt.lib(cthread.obj) : error LNK2019: 无法解析的外部符号 __endthreadex，函数 __Thrd_exit 中引用了该符号
+libcpmt.lib(cthread.obj) : error LNK2019: 无法解析的外部符号 __imp__CloseHandle@4，函数 __Thrd_detach 中引用了该符号
+libcpmt.lib(cthread.obj) : error LNK2019: 无法解析的外部符号 __imp__GetLastError@0，函数 __Thrd_hardware_concurrency 中引用了该符号
+libvcruntime.lib(per_thread_data.obj) : error LNK2001: 无法解析的外部符号 __imp__GetLastError@0
+libcpmt.lib(cthread.obj) : error LNK2019: 无法解析的外部符号 __imp__WaitForSingleObjectEx@12，函数 __Thrd_join 中引用了该符号
+libcpmt.lib(cthread.obj) : error LNK2019: 无法解析的外部符号 __imp__Sleep@4，函数 __Thrd_sleep 中引用了该符号
+libcpmt.lib(sharedmutex.obj) : error LNK2001: 无法解析的外部符号 __imp__Sleep@4
+libcpmt.lib(cthread.obj) : error LNK2019: 无法解析的外部符号 __imp__SwitchToThread@0，函数 __Thrd_yield 中引用了该符号
+libcpmt.lib(cond.obj) : error LNK2001: 无法解析的外部符号 __imp__GetCurrentThreadId@0
+LIBCMT.lib(gs_support.obj) : error LNK2001: 无法解析的外部符号 __imp__GetCurrentThreadId@0
+libcpmt.lib(cthread.obj) : error LNK2001: 无法解析的外部符号 __imp__GetCurrentThreadId@0
+libcpmt.lib(sharedmutex.obj) : error LNK2001: 无法解析的外部符号 __imp__GetCurrentThreadId@0
+libcpmt.lib(mutex.obj) : error LNK2001: 无法解析的外部符号 __imp__GetCurrentThreadId@0
+libcpmt.lib(xnotify.obj) : error LNK2001: 无法解析的外部符号 __imp__GetCurrentThreadId@0
+libcpmt.lib(cthread.obj) : error LNK2019: 无法解析的外部符号 __imp__GetExitCodeThread@8，函数 __Thrd_join 中引用了该符号
+libcpmt.lib(cthread.obj) : error LNK2019: 无法解析的外部符号 __imp__GetLogicalProcessorInformationEx@12，函数 __Thrd_hardware_concurrency 中引用了该符号
+libcpmt.lib(sharedmutex.obj) : error LNK2019: 无法解析的外部符号 __imp__ReleaseSRWLockExclusive@4，函数 __Smtx_unlock_exclusive 中引用了该符号
+libcpmt.lib(mutex.obj) : error LNK2001: 无法解析的外部符号 __imp__ReleaseSRWLockExclusive@4
+libcpmt.lib(sharedmutex.obj) : error LNK2019: 无法解析的外部符号 __imp__ReleaseSRWLockShared@4，函数 __Smtx_unlock_shared 中引用了该符号
+libcpmt.lib(sharedmutex.obj) : error LNK2019: 无法解析的外部符号 __imp__AcquireSRWLockExclusive@4，函数 __Smtx_lock_exclusive 中引用了该符号
+libcpmt.lib(mutex.obj) : error LNK2001: 无法解析的外部符号 __imp__AcquireSRWLockExclusive@4
+libcpmt.lib(sharedmutex.obj) : error LNK2019: 无法解析的外部符号 __imp__AcquireSRWLockShared@4，函数 __Smtx_lock_shared 中引用了该符号
+libcpmt.lib(sharedmutex.obj) : error LNK2019: 无法解析的外部符号 __imp__TryAcquireSRWLockExclusive@4，函数 __Smtx_try_lock_exclusive 中引用了该符号
+libcpmt.lib(mutex.obj) : error LNK2001: 无法解析的外部符号 __imp__TryAcquireSRWLockExclusive@4
+libcpmt.lib(sharedmutex.obj) : error LNK2019: 无法解析的外部符号 __imp__TryAcquireSRWLockShared@4，函数 __Smtx_try_lock_shared 中引用了该符号
+libcpmt.lib(sharedmutex.obj) : error LNK2019: 无法解析的外部符号 __imp__SleepConditionVariableSRW@16，函数 "bool __cdecl _Primitive_wait_for(struct _Cnd_internal_imp_t * const,struct _Mtx_internal_imp_t * const,unsigned int)" (?_Primitive_wait_for@@YA_NQAU_Cnd_internal_imp_t@@QAU_Mtx_internal_imp_t@@I@Z) 中引用了该符号
+libcpmt.lib(cond.obj) : error LNK2001: 无法解析的外部符号 __imp__SleepConditionVariableSRW@16
+libcpmt.lib(sharedmutex.obj) : error LNK2019: 无法解析的外部符号 __imp__GetTickCount64@0，函数 __Cnd_timedwait_for_impl@16 中引用了该符号
+libcpmt.lib(mutex.obj) : error LNK2019: 无法解析的外部符号 ___acrt_iob_func，函数 __Thrd_abort 中引用了该符号
+libcpmt.lib(wcin.obj) : error LNK2001: 无法解析的外部符号 ___acrt_iob_func
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 ___acrt_iob_func
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 ___acrt_iob_func
+libcpmt.lib(mutex.obj) : error LNK2019: 无法解析的外部符号 _fputc，函数 __Thrd_abort 中引用了该符号
+libcpmt.lib(mutex.obj) : error LNK2019: 无法解析的外部符号 _fputs，函数 __Thrd_abort 中引用了该符号
+libcpmt.lib(syserror.obj) : error LNK2019: 无法解析的外部符号 __imp__FormatMessageA@28，函数 "unsigned long __cdecl std::_Winerror_message(unsigned long,char *,unsigned long)" (?_Winerror_message@std@@YAKKPADK@Z) 中引用了该符号
+libcpmt.lib(syserror_import_lib.obj) : error LNK2001: 无法解析的外部符号 __imp__FormatMessageA@28
+libvcruntime.lib(std_exception.obj) : error LNK2001: 无法解析的外部符号 _malloc
+libvcruntime.lib(std_type_info.obj) : error LNK2001: 无法解析的外部符号 _malloc
+libcpmt.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 _malloc
+libcpmt.lib(xwcsxfrm.obj) : error LNK2001: 无法解析的外部符号 _malloc
+libcpmt.lib(StlCompareStringA.obj) : error LNK2001: 无法解析的外部符号 _malloc
+LIBCMT.lib(new_scalar.obj) : error LNK2001: 无法解析的外部符号 _malloc
+libcpmt.lib(locale0.obj) : error LNK2001: 无法解析的外部符号 _malloc
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _malloc
+libcpmt.lib(StlLCMapStringA.obj) : error LNK2001: 无法解析的外部符号 _malloc
+libcpmt.lib(wlocale.obj) : error LNK2001: 无法解析的外部符号 _malloc
+libcpmt.lib(locale0.obj) : error LNK2019: 无法解析的外部符号 _setlocale，函数 "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z) 中引用了该符号
+libcpmt.lib(locale.obj) : error LNK2001: 无法解析的外部符号 _setlocale
+libcpmt.lib(_tolower.obj) : error LNK2019: 无法解析的外部符号 ___pctype_func，函数 __Getctype 中引用了该符号
+libcpmt.lib(xwctomb.obj) : error LNK2001: 无法解析的外部符号 ___pctype_func
+libcpmt.lib(_toupper.obj) : error LNK2001: 无法解析的外部符号 ___pctype_func
+libcpmt.lib(_tolower.obj) : error LNK2019: 无法解析的外部符号 _isupper，函数 __Tolower 中引用了该符号
+libcpmt.lib(xdateord.obj) : error LNK2001: 无法解析的外部符号 ____lc_locale_name_func
+libcpmt.lib(xwcscoll.obj) : error LNK2001: 无法解析的外部符号 ____lc_locale_name_func
+libcpmt.lib(xwcsxfrm.obj) : error LNK2001: 无法解析的外部符号 ____lc_locale_name_func
+libcpmt.lib(xstrxfrm.obj) : error LNK2001: 无法解析的外部符号 ____lc_locale_name_func
+libcpmt.lib(_tolower.obj) : error LNK2001: 无法解析的外部符号 ____lc_locale_name_func
+libcpmt.lib(xwctomb.obj) : error LNK2001: 无法解析的外部符号 ____lc_locale_name_func
+libcpmt.lib(_toupper.obj) : error LNK2001: 无法解析的外部符号 ____lc_locale_name_func
+libcpmt.lib(xstrcoll.obj) : error LNK2001: 无法解析的外部符号 ____lc_locale_name_func
+libcpmt.lib(_tolower.obj) : error LNK2019: 无法解析的外部符号 ____lc_codepage_func，函数 __Getctype 中引用了该符号
+libcpmt.lib(xwctomb.obj) : error LNK2001: 无法解析的外部符号 ____lc_codepage_func
+libcpmt.lib(_toupper.obj) : error LNK2001: 无法解析的外部符号 ____lc_codepage_func
+libcpmt.lib(_tolower.obj) : error LNK2019: 无法解析的外部符号 __wcsdup，函数 __Getctype 中引用了该符号
+libcpmt.lib(xstrcoll.obj) : error LNK2001: 无法解析的外部符号 __wcsdup
+libcpmt.lib(xwctomb.obj) : error LNK2019: 无法解析的外部符号 ____mb_cur_max_func，函数 __Getcvt 中引用了该符号
+libcpmt.lib(xwctomb.obj) : error LNK2019: 无法解析的外部符号 __imp__WideCharToMultiByte@32，函数 __Wcrtomb 中引用了该符号
+libcpmt.lib(StlLCMapStringA.obj) : error LNK2001: 无法解析的外部符号 __imp__WideCharToMultiByte@32
+libcpmt.lib(xmbtowc.obj) : error LNK2019: 无法解析的外部符号 __imp__MultiByteToWideChar@24，函数 __Mbrtowc 中引用了该符号
+libcpmt.lib(StlLCMapStringA.obj) : error LNK2001: 无法解析的外部符号 __imp__MultiByteToWideChar@24
+libcpmt.lib(StlCompareStringA.obj) : error LNK2001: 无法解析的外部符号 __imp__MultiByteToWideChar@24
+libcpmt.lib(xgetwctype.obj) : error LNK2019: 无法解析的外部符号 __imp__GetStringTypeW@16，函数 __Getwctype 中引用了该符号
+libcpmt.lib(xstol.obj) : error LNK2019: 无法解析的外部符号 _isspace，函数 __Stolx 中引用了该符号
+libcpmt.lib(xstoul.obj) : error LNK2001: 无法解析的外部符号 _isspace
+libcpmt.lib(xstoll.obj) : error LNK2001: 无法解析的外部符号 _isspace
+libcpmt.lib(xstoull.obj) : error LNK2001: 无法解析的外部符号 _isspace
+libcpmt.lib(xstoul.obj) : error LNK2019: 无法解析的外部符号 _tolower，函数 __Stoulx 中引用了该符号
+libcpmt.lib(xstoull.obj) : error LNK2001: 无法解析的外部符号 _tolower
+  已定义且可能匹配的符号上的提示:
+    "public: char __thiscall std::ctype<char>::tolower(char)const " (?tolower@?$ctype@D@std@@QBEDD@Z)
+    "public: unsigned short __thiscall std::ctype<unsigned short>::tolower(unsigned short)const " (?tolower@?$ctype@G@std@@QBEGG@Z)
+    "public: wchar_t __thiscall std::ctype<wchar_t>::tolower(wchar_t)const " (?tolower@?$ctype@_W@std@@QBE_W_W@Z)
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _fgetwc，函数 "bool __cdecl std::_Fgetc<wchar_t>(wchar_t &,struct _iobuf *)" (??$_Fgetc@_W@std@@YA_NAA_WPAU_iobuf@@@Z) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _fgetwc
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _fgetwc
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _fputwc，函数 "bool __cdecl std::_Fputc<wchar_t>(wchar_t,struct _iobuf *)" (??$_Fputc@_W@std@@YA_N_WPAU_iobuf@@@Z) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _fputwc
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _fputwc
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _ungetwc，函数 "bool __cdecl std::_Ungetc<wchar_t>(wchar_t const &,struct _iobuf *)" (??$_Ungetc@_W@std@@YA_NAB_WPAU_iobuf@@@Z) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _ungetwc
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _ungetwc
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _fclose，函数 "public: class std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> > * __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::close(void)" (?close@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@QAEPAV12@XZ) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _fclose
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _fclose
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _fflush，函数 "protected: virtual int __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::sync(void)" (?sync@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@MAEHXZ) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _fflush
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _fflush
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _fgetc，函数 "protected: virtual unsigned short __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::uflow(void)" (?uflow@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@MAEGXZ) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _fgetc
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _fgetc
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _fgetpos，函数 "protected: virtual class std::fpos<struct _Mbstatet> __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::seekoff(__int64,int,int)" (?seekoff@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@MAE?AV?$fpos@U_Mbstatet@@@2@_JHH@Z) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _fgetpos
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _fgetpos
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _fsetpos，函数 "protected: virtual class std::fpos<struct _Mbstatet> __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::seekpos(class std::fpos<struct _Mbstatet>,int)" (?seekpos@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@MAE?AV?$fpos@U_Mbstatet@@@2@V32@H@Z) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _fsetpos
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _fsetpos
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 __fseeki64，函数 "protected: virtual class std::fpos<struct _Mbstatet> __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::seekoff(__int64,int,int)" (?seekoff@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@MAE?AV?$fpos@U_Mbstatet@@@2@_JHH@Z) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 __fseeki64
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 __fseeki64
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _fwrite，函数 "protected: bool __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::_Endwrite(void)" (?_Endwrite@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@IAE_NXZ) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _fwrite
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _fwrite
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _setvbuf，函数 "protected: virtual class std::basic_streambuf<wchar_t,struct std::char_traits<wchar_t> > * __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::setbuf(wchar_t *,__int64)" (?setbuf@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@MAEPAV?$basic_streambuf@_WU?$char_traits@_W@std@@@2@PA_W_J@Z) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _setvbuf
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _setvbuf
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 _ungetc，函数 "protected: virtual unsigned short __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::uflow(void)" (?uflow@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@MAEGXZ) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 _ungetc
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 _ungetc
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 __lock_file，函数 "public: virtual void __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::_Lock(void)" (?_Lock@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@UAEXXZ) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 __lock_file
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 __lock_file
+libcpmt.lib(wcin.obj) : error LNK2019: 无法解析的外部符号 __unlock_file，函数 "public: virtual void __thiscall std::basic_filebuf<wchar_t,struct std::char_traits<wchar_t> >::_Unlock(void)" (?_Unlock@?$basic_filebuf@_WU?$char_traits@_W@std@@@std@@UAEXXZ) 中引用了该符号
+libcpmt.lib(wcout.obj) : error LNK2001: 无法解析的外部符号 __unlock_file
+libcpmt.lib(wcerr.obj) : error LNK2001: 无法解析的外部符号 __unlock_file
+libcpmt.lib(xmtx.obj) : error LNK2019: 无法解析的外部符号 __imp__EnterCriticalSection@4，函数 __Mtxlock 中引用了该符号
+libvcruntime.lib(locks.obj) : error LNK2001: 无法解析的外部符号 __imp__EnterCriticalSection@4
+libcpmt.lib(xmtx.obj) : error LNK2019: 无法解析的外部符号 __imp__LeaveCriticalSection@4，函数 __Mtxunlock 中引用了该符号
+libvcruntime.lib(locks.obj) : error LNK2001: 无法解析的外部符号 __imp__LeaveCriticalSection@4
+libcpmt.lib(xmtx.obj) : error LNK2019: 无法解析的外部符号 __imp__InitializeCriticalSectionEx@12，函数 __Mtxinit 中引用了该符号
+libvcruntime.lib(locks.obj) : error LNK2001: 无法解析的外部符号 __imp__InitializeCriticalSectionEx@12
+libcpmt.lib(xmtx.obj) : error LNK2019: 无法解析的外部符号 __imp__DeleteCriticalSection@4，函数 __Mtxdst 中引用了该符号
+libvcruntime.lib(locks.obj) : error LNK2001: 无法解析的外部符号 __imp__DeleteCriticalSection@4
+libcpmt.lib(cond.obj) : error LNK2019: 无法解析的外部符号 __imp__WakeConditionVariable@4，函数 "void __cdecl _Primitive_notify_one(struct _Cnd_internal_imp_t * const)" (?_Primitive_notify_one@@YAXQAU_Cnd_internal_imp_t@@@Z) 中引用了该符号
+libcpmt.lib(cond.obj) : error LNK2019: 无法解析的外部符号 __imp__WakeAllConditionVariable@4，函数 "void __cdecl _Primitive_notify_all(struct _Cnd_internal_imp_t * const)" (?_Primitive_notify_all@@YAXQAU_Cnd_internal_imp_t@@@Z) 中引用了该符号
+libcpmt.lib(syserror_import_lib.obj) : error LNK2019: 无法解析的外部符号 __imp__LocalFree@4，函数 ___std_system_error_deallocate_message@4 中引用了该符号
+libcpmt.lib(syserror_import_lib.obj) : error LNK2019: 无法解析的外部符号 __imp__GetLocaleInfoEx@16，函数 ___std_system_error_allocate_message@8 中引用了该符号
+libcpmt.lib(xdateord.obj) : error LNK2001: 无法解析的外部符号 __imp__GetLocaleInfoEx@16
+libcpmt.lib(locale.obj) : error LNK2019: 无法解析的外部符号 _realloc，函数 "private: static void __cdecl std::locale::_Locimp::_Locimp_Addfac(class std::locale::_Locimp *,class std::locale::facet *,unsigned int)" (?_Locimp_Addfac@_Locimp@locale@std@@CAXPAV123@PAVfacet@23@I@Z) 中引用了该符号
+libcpmt.lib(iosptrs.obj) : error LNK2019: 无法解析的外部符号 __imp__EncodePointer@4，函数 "void __cdecl _Atexit(void (__cdecl*)(void))" (?_Atexit@@YAXP6AXXZ@Z) 中引用了该符号
+libvcruntime.lib(frame.obj) : error LNK2001: 无法解析的外部符号 __imp__EncodePointer@4
+libcpmt.lib(iosptrs.obj) : error LNK2019: 无法解析的外部符号 __imp__DecodePointer@4，函数 "public: __thiscall _Init_atexit::~_Init_atexit(void)" (??1_Init_atexit@@QAE@XZ) 中引用了该符号
+libcpmt.lib(StlLCMapStringA.obj) : error LNK2019: 无法解析的外部符号 ___strncnt，函数 ___crtLCMapStringA 中引用了该符号
+libcpmt.lib(StlCompareStringA.obj) : error LNK2001: 无法解析的外部符号 ___strncnt
+libcpmt.lib(StlLCMapStringA.obj) : error LNK2019: 无法解析的外部符号 __imp__LCMapStringEx@36，函数 ___crtLCMapStringA 中引用了该符号
+libcpmt.lib(StlLCMapStringW.obj) : error LNK2001: 无法解析的外部符号 __imp__LCMapStringEx@36
+libcpmt.lib(StlLCMapStringW.obj) : error LNK2019: 无法解析的外部符号 _wcsnlen，函数 ___crtLCMapStringW 中引用了该符号
+libcpmt.lib(StlCompareStringW.obj) : error LNK2001: 无法解析的外部符号 _wcsnlen
+libcpmt.lib(_toupper.obj) : error LNK2019: 无法解析的外部符号 _islower，函数 __Toupper 中引用了该符号
+libcpmt.lib(wlocale.obj) : error LNK2019: 无法解析的外部符号 __Getdays，函数 "public: char const * __thiscall std::_Locinfo::_Getdays(void)const " (?_Getdays@_Locinfo@std@@QBEPBDXZ) 中引用了该符号
+libcpmt.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 __Getdays
+  已定义且可能匹配的符号上的提示:
+    "public: char const * __thiscall std::_Locinfo::_Getdays(void)const " (?_Getdays@_Locinfo@std@@QBEPBDXZ)
+libcpmt.lib(wlocale.obj) : error LNK2019: 无法解析的外部符号 __Getmonths，函数 "public: char const * __thiscall std::_Locinfo::_Getmonths(void)const " (?_Getmonths@_Locinfo@std@@QBEPBDXZ) 中引用了该符号
+libcpmt.lib(xlocale.obj) : error LNK2001: 无法解析的外部符号 __Getmonths
+  已定义且可能匹配的符号上的提示:
+    "public: char const * __thiscall std::_Locinfo::_Getmonths(void)const " (?_Getmonths@_Locinfo@std@@QBEPBDXZ)
+libcpmt.lib(wlocale.obj) : error LNK2019: 无法解析的外部符号 __W_Getdays，函数 "public: unsigned short const * __thiscall std::_Locinfo::_W_Getdays(void)const " (?_W_Getdays@_Locinfo@std@@QBEPBGXZ) 中引用了该符号
+  已定义且可能匹配的符号上的提示:
+    "public: unsigned short const * __thiscall std::_Locinfo::_W_Getdays(void)const " (?_W_Getdays@_Locinfo@std@@QBEPBGXZ)
+libcpmt.lib(wlocale.obj) : error LNK2019: 无法解析的外部符号 __W_Getmonths，函数 "public: unsigned short const * __thiscall std::_Locinfo::_W_Getmonths(void)const " (?_W_Getmonths@_Locinfo@std@@QBEPBGXZ) 中引用了该符号
+  已定义且可能匹配的符号上的提示:
+    "public: unsigned short const * __thiscall std::_Locinfo::_W_Getmonths(void)const " (?_W_Getmonths@_Locinfo@std@@QBEPBGXZ)
+libcpmt.lib(wlocale.obj) : error LNK2019: 无法解析的外部符号 __W_Gettnames，函数 "protected: void __thiscall std::time_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::_Init(class std::_Locinfo const &)" (?_Init@?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@IAEXABV_Locinfo@2@@Z) 中引用了该符号
+  已定义且可能匹配的符号上的提示:
+    "public: class std::_Timevec __thiscall std::_Locinfo::_W_Gettnames(void)const " (?_W_Gettnames@_Locinfo@std@@QBE?AV_Timevec@2@XZ)
+libcpmt.lib(wlocale.obj) : error LNK2019: 无法解析的外部符号 __Wcsftime，函数 "protected: virtual class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > __thiscall std::time_put<unsigned short,class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> > >::do_put(class std::ostreambuf_iterator<unsigned short,struct std::char_traits<unsigned short> >,class std::ios_base &,unsigned short,struct tm const *,char,char)const " (?do_put@?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@GU?$char_traits@G@std@@@2@V32@AAVios_base@2@GPBUtm@@DD@Z) 中引用了该符号
+libcpmt.lib(xlocale.obj) : error LNK2019: 无法解析的外部符号 __Gettnames，函数 "public: class std::_Timevec __thiscall std::_Locinfo::_Gettnames(void)const " (?_Gettnames@_Locinfo@std@@QBE?AV_Timevec@2@XZ) 中引用了该符号
+  已定义且可能匹配的符号上的提示:
+    "public: class std::_Timevec __thiscall std::_Locinfo::_Gettnames(void)const " (?_Gettnames@_Locinfo@std@@QBE?AV_Timevec@2@XZ)
+libcpmt.lib(xlocale.obj) : error LNK2019: 无法解析的外部符号 __Strftime，函数 "protected: virtual class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::time_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,char,struct tm const *,char,char)const " (?do_put@?$time_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPBUtm@@DD@Z) 中引用了该符号
+libcpmt.lib(xstrcoll.obj) : error LNK2019: 无法解析的外部符号 ____lc_collate_cp_func，函数 __Getcoll 中引用了该符号
+libcpmt.lib(xstrxfrm.obj) : error LNK2001: 无法解析的外部符号 ____lc_collate_cp_func
+libcpmt.lib(StlCompareStringA.obj) : error LNK2019: 无法解析的外部符号 __imp__CompareStringEx@36，函数 ___crtCompareStringA 中引用了该符号
+libcpmt.lib(StlCompareStringW.obj) : error LNK2001: 无法解析的外部符号 __imp__CompareStringEx@36
+libcpmt.lib(StlCompareStringA.obj) : error LNK2019: 无法解析的外部符号 __imp__GetCPInfo@8，函数 ___crtCompareStringA 中引用了该符号
+LIBCMT.lib(new_scalar.obj) : error LNK2019: 无法解析的外部符号 __callnewh，函数 "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z) 中引用了该符号
+LIBCMT.lib(utility.obj) : error LNK2019: 无法解析的外部符号 __seh_filter_dll，函数 ___scrt_dllmain_exception_filter 中引用了该符号
+LIBCMT.lib(utility.obj) : error LNK2019: 无法解析的外部符号 __configure_narrow_argv，函数 "public: static int __cdecl __scrt_narrow_argv_policy::configure_argv(void)" (?configure_argv@__scrt_narrow_argv_policy@@SAHXZ) 中引用了该符号
+LIBCMT.lib(utility.obj) : error LNK2019: 无法解析的外部符号 __initialize_narrow_environment，函数 "public: static int __cdecl __scrt_narrow_environment_policy::initialize_environment(void)" (?initialize_environment@__scrt_narrow_environment_policy@@SAHXZ) 中引用了该符号
+LIBCMT.lib(utility.obj) : error LNK2019: 无法解析的外部符号 __initialize_onexit_table，函数 ___scrt_initialize_onexit_tables 中引用了该符号
+LIBCMT.lib(utility.obj) : error LNK2019: 无法解析的外部符号 __register_onexit_function，函数 __onexit 中引用了该符号
+LIBCMT.lib(utility.obj) : error LNK2019: 无法解析的外部符号 __execute_onexit_table，函数 ___scrt_dllmain_uninitialize_c 中引用了该符号
+LIBCMT.lib(utility.obj) : error LNK2019: 无法解析的外部符号 __crt_atexit，函数 __onexit 中引用了该符号
+LIBCMT.lib(utility.obj) : error LNK2019: 无法解析的外部符号 __crt_at_quick_exit，函数 _at_quick_exit 中引用了该符号
+LIBCMT.lib(utility.obj) : error LNK2019: 无法解析的外部符号 __cexit，函数 ___scrt_dllmain_uninitialize_c 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2001: 无法解析的外部符号 __cexit
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __seh_filter_exe，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __set_app_type，函数 "int __cdecl pre_c_initialization(void)" (?pre_c_initialization@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 ___setusermatherr，函数 "int __cdecl pre_c_initialization(void)" (?pre_c_initialization@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __configure_wide_argv，函数 "int __cdecl pre_c_initialization(void)" (?pre_c_initialization@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __initialize_wide_environment，函数 "int __cdecl pre_c_initialization(void)" (?pre_c_initialization@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __get_initial_wide_environment，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __initterm，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __initterm_e，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 _exit，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __exit，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __set_fmode，函数 "int __cdecl pre_c_initialization(void)" (?pre_c_initialization@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 ___p___argc，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 ___p___wargv，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __c_exit，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __register_thread_local_exe_atexit_callback，函数 "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __configthreadlocale，函数 "int __cdecl pre_c_initialization(void)" (?pre_c_initialization@@YAHXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 __set_new_mode，函数 "void __cdecl pre_cpp_initialization(void)" (?pre_cpp_initialization@@YAXXZ) 中引用了该符号
+LIBCMT.lib(exe_wmain.obj) : error LNK2019: 无法解析的外部符号 ___p__commode，函数 "int __cdecl pre_c_initialization(void)" (?pre_c_initialization@@YAHXZ) 中引用了该符号
+LIBCMT.lib(cpu_disp.obj) : error LNK2019: 无法解析的外部符号 __imp__IsProcessorFeaturePresent@4，函数 ___isa_available_init 中引用了该符号
+LIBCMT.lib(utility_desktop.obj) : error LNK2019: 无法解析的外部符号 __imp__SetUnhandledExceptionFilter@4，函数 ___scrt_set_unhandled_exception_filter 中引用了该符号
+LIBCMT.lib(utility_desktop.obj) : error LNK2019: 无法解析的外部符号 __imp__GetStartupInfoW@4，函数 ___scrt_get_show_window_mode 中引用了该符号
+LIBCMT.lib(utility_desktop.obj) : error LNK2019: 无法解析的外部符号 __imp__GetModuleHandleW@4，函数 ___scrt_is_managed_app 中引用了该符号
+LIBCMT.lib(gs_support.obj) : error LNK2019: 无法解析的外部符号 __imp__GetCurrentProcessId@0，函数 ___get_entropy 中引用了该符号
+LIBCMT.lib(gs_support.obj) : error LNK2019: 无法解析的外部符号 __imp__GetSystemTimeAsFileTime@4，函数 ___get_entropy 中引用了该符号
+LIBCMT.lib(tncleanup.obj) : error LNK2019: 无法解析的外部符号 __imp__InitializeSListHead@4，函数 "void __cdecl __scrt_initialize_type_info(void)" (?__scrt_initialize_type_info@@YAXXZ) 中引用了该符号
+LIBCMT.lib(default_precision.obj) : error LNK2019: 无法解析的外部符号 __controlfp_s，函数 __initialize_default_precision 中引用了该符号
+libvcruntime.lib(std_exception.obj) : error LNK2019: 无法解析的外部符号 _strcpy_s，函数 ___std_exception_copy 中引用了该符号
+libvcruntime.lib(std_type_info.obj) : error LNK2001: 无法解析的外部符号 _strcpy_s
+libvcruntime.lib(throw.obj) : error LNK2019: 无法解析的外部符号 __imp__RaiseException@16，函数 __CxxThrowException@8 中引用了该符号
+libvcruntime.lib(trnsctrl.obj) : error LNK2019: 无法解析的外部符号 __imp__RtlUnwind@16，函数 "void __stdcall _UnwindNestedFrames(struct EHRegistrationNode *,struct EHExceptionRecord *)" (?_UnwindNestedFrames@@YGXPAUEHRegistrationNode@@PAUEHExceptionRecord@@@Z) 中引用了该符号
+libvcruntime.lib(exsup4.obj) : error LNK2001: 无法解析的外部符号 __imp__RtlUnwind@16
+libvcruntime.lib(exsup.obj) : error LNK2001: 无法解析的外部符号 __imp__RtlUnwind@16
+libvcruntime.lib(std_type_info.obj) : error LNK2019: 无法解析的外部符号 __imp__InterlockedPushEntrySList@8，函数 ___std_type_info_name 中引用了该符号
+libvcruntime.lib(std_type_info.obj) : error LNK2019: 无法解析的外部符号 __imp__InterlockedFlushSList@4，函数 ___std_type_info_destroy_list 中引用了该符号
+libvcruntime.lib(per_thread_data.obj) : error LNK2019: 无法解析的外部符号 __imp__SetLastError@4，函数 "public: __thiscall `anonymous namespace'::scoped_get_last_error_reset::~scoped_get_last_error_reset(void)" (??1scoped_get_last_error_reset@?A0xf875a351@@QAE@XZ) 中引用了该符号
+libvcruntime.lib(per_thread_data.obj) : error LNK2019: 无法解析的外部符号 __imp__FlsAlloc@4，函数 ___vcrt_initialize_ptd 中引用了该符号
+libvcruntime.lib(per_thread_data.obj) : error LNK2019: 无法解析的外部符号 __imp__FlsGetValue@4，函数 ___vcrt_freeptd_for_this_thread 中引用了该符号
+libvcruntime.lib(per_thread_data.obj) : error LNK2019: 无法解析的外部符号 __imp__FlsSetValue@8，函数 "bool __cdecl store_and_initialize_ptd(struct __vcrt_ptd * const)" (?store_and_initialize_ptd@@YA_NQAU__vcrt_ptd@@@Z) 中引用了该符号
+libvcruntime.lib(per_thread_data.obj) : error LNK2019: 无法解析的外部符号 __imp__FlsFree@4，函数 ___vcrt_uninitialize_ptd 中引用了该符号
+libvcruntime.lib(undname.obj) : error LNK2019: 无法解析的外部符号 ___stdio_common_vsprintf，函数 _vsnprintf 中引用了该符号
+libvcruntime.lib(undname.obj) : error LNK2019: 无法解析的外部符号 _atol，函数 "private: class DName __thiscall UnDecorator::getTemplateNonTypeArgument(void)" (?getTemplateNonTypeArgument@UnDecorator@@AAE?AVDName@@XZ) 中引用了该符号
+libvcruntime.lib(undname.obj) : error LNK2019: 无法解析的外部符号 _strncmp，函数 "public: char * __thiscall UnDecorator::getCHPEName(char *,int)" (?getCHPEName@UnDecorator@@QAEPADPADH@Z) 中引用了该符号
+E:\My_environment\windows_sdk\Lib\10.0.26100.0\um\x64\windowsapp.lib : warning LNK4272:库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\My_environment\windows_sdk\Lib\10.0.26100.0\um\x64\ole32.lib : warning LNK4272:库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\My_environment\windows_sdk\Lib\10.0.26100.0\um\x64\kernel32.lib : warning LNK4272:库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\My_environment\windows_sdk\Lib\10.0.26100.0\ucrt\x64\libucrt.lib : warning LNK4272:库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\My_environment\windows_sdk\Lib\10.0.26100.0\um\x64\uuid.lib : warning LNK4272:库计算机类型“x64”与目标计算机类型“x86”冲突
+WiFiDirectCLI.exe : fatal error LNK1120: 170 个无法解析的外部命令
+
+Build FAILED.
