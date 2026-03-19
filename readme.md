@@ -21,22 +21,22 @@
 
 - [ ] windows sdk
 - [ ] Visual Studio Build Tools(主要是cl.exe编译器)
-- [ ] 修改build.bat中windows sdk路径
-  ![build.bat修改部分](assets/build-bat.png)  
+- [ ] CMake 3.15 或更高版本
 
 
 ### 编译
 
-本项目在命令行编译，即windows的powershell中；当然其他终端也行，可自行尝试
+本项目使用 CMake 构建，在 **x64 Native Tools Command Prompt for VS** 中执行：
 
 ```shell
 call "<your_vs_community_dir>\VC\Auxiliary\Build\vcvars64.bat" x64 # 进行vs develop tool环境配置
-cl # 确认是否有输出
-where cl # 确认架构是否对应自己的系统
 cd <current_project>
-build.bat
+
+# 配置 + 编译
+cmake -B build -G "Visual Studio 17 2022" -A x64
+cmake --build build --config Release
 ```
-成功执行后会在当前目录生成工具：**WifiDirectCLI.exe**
+成功执行后会在 `build/Release/` 目录生成工具：**WiFiDirectCLI.exe**
 
 
 ### 使用

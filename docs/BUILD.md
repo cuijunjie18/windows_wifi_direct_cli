@@ -16,7 +16,8 @@ transform/
 ├── main.cpp              # Main CLI entry point (advertiser + connector modes)
 ├── pch.h                 # Precompiled header (WinRT + standard includes)
 ├── SocketReaderWriter.h  # Socket R/W helper, data structures, constants
-├── build.bat             # Automated build script for cl.exe
+├── CMakeLists.txt        # CMake build configuration
+├── build.bat             # Legacy build script for cl.exe (deprecated)
 ├── BUILD.md              # This file (build instructions)
 └── USAGE.md              # Usage documentation
 ```
@@ -33,7 +34,7 @@ transform/
 > [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
 > as a lightweight alternative.
 
-## Build Instructions
+## Build Instructions (CMake)
 
 ### Step 1: Open a Developer Command Prompt
 
@@ -49,38 +50,32 @@ Start Menu > Visual Studio 2022 > x64 Native Tools Command Prompt for VS 2022
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
 ```
 
-### Step 2: Navigate to the transform directory
+### Step 2: Navigate to the project directory
 
 ```cmd
-cd path\to\Samples\WiFiDirect\cpp\transform
+cd path\to\windows_wifi_direct_cli
 ```
 
-### Step 3: Run the build script
+### Step 3: Configure and build with CMake
 
 ```cmd
-build.bat
+cmake -B build -G "Visual Studio 17 2022" -A x64
+cmake --build build --config Release
 ```
 
-On success, this produces `WiFiDirectCLI.exe` in the current directory.
+On success, this produces `WiFiDirectCLI.exe` in `build/Release/`.
 
-### Manual Build (without build.bat)
+#### Alternative: Using Ninja generator (faster builds)
 
 ```cmd
-cl.exe /nologo /EHsc /std:c++17 /W3 /O2 /DWIN32_LEAN_AND_MEAN /D_UNICODE /DUNICODE ^
-    /I"C:\Program Files (x86)\Windows Kits\10\Include\<SDK_VER>\cppwinrt" ^
-    /I"C:\Program Files (x86)\Windows Kits\10\Include\<SDK_VER>\um" ^
-    /I"C:\Program Files (x86)\Windows Kits\10\Include\<SDK_VER>\ucrt" ^
-    /I"C:\Program Files (x86)\Windows Kits\10\Include\<SDK_VER>\shared" ^
-    /I"C:\Program Files (x86)\Windows Kits\10\Include\<SDK_VER>\winrt" ^
-    /I"." ^
-    main.cpp ^
-    /Fe:WiFiDirectCLI.exe ^
-    /link windowsapp.lib ole32.lib ^
-    /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\<SDK_VER>\um\x64" ^
-    /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\<SDK_VER>\ucrt\x64"
+cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+cmake --build build
 ```
 
-Replace `<SDK_VER>` with your installed SDK version (e.g., `10.0.22621.0`).
+### Legacy Build (build.bat - deprecated)
+
+The original `build.bat` script is still available for reference but is deprecated.
+Please use CMake for new builds.
 
 ## Why Not g++?
 
