@@ -54,9 +54,17 @@ void RunAdvertiserMode()
     std::getline(std::wcin, input);
     int listenStateMode = input.empty() ? 0 : std::stoi(input);
 
-    std::wcout << L"Enable Autonomous Group Owner mode? (y/n) [n]: ";
+    std::wcout << L"Enable Autonomous Group Owner mode? (y/n) [y]: ";
     std::getline(std::wcin, input);
-    bool isGO = (!input.empty() && (input[0] == L'y' || input[0] == L'Y'));
+    bool isGO = (input.empty() || input[0] != L'n');
+
+    std::wcout << L"Enable Legacy mode for Android compatibility? (y/n) [y]: ";
+    std::getline(std::wcin, input);
+    bool enableLegacy = (input.empty() || input[0] != L'n');
+
+    std::wcout << L"Passphrase for Legacy mode (empty for auto) []: ";
+    std::getline(std::wcin, input);
+    std::wstring legacyPassphrase = input;
 
     std::wcout << L"Enable connection listener? (y/n) [y]: ";
     std::getline(std::wcin, input);
@@ -76,6 +84,19 @@ void RunAdvertiserMode()
     WiFiDirectAdvertisementPublisher publisher;
     publisher.Advertisement().IsAutonomousGroupOwnerEnabled(isGO);
 
+    // Configure Legacy mode for Android compatibility
+    if (enableLegacy)
+    {
+        publisher.Advertisement().LegacySettings().IsEnabled(true);
+        if (!legacyPassphrase.empty())
+        {
+            winrt::Windows::Security::Credentials::PasswordCredential credential;
+            credential.Password(winrt::hstring(legacyPassphrase));
+            publisher.Advertisement().LegacySettings().Passphrase(credential);
+        }
+        LogMessage(L"Legacy mode enabled (Android compatibility)");
+    }
+
     switch (listenStateMode)
     {
     case 1:
@@ -93,8 +114,16 @@ void RunAdvertiserMode()
         [](WiFiDirectAdvertisementPublisher const&,
            WiFiDirectAdvertisementPublisherStatusChangedEventArgs const& args)
     {
-        LogMessage(L"Advertisement Status: " +
-            std::to_wstring(static_cast<int>(args.Status())) +
+        std::wstring statusStr;
+        switch (args.Status())
+        {
+        case WiFiDirectAdvertisementPublisherStatus::Created: statusStr = L"Created"; break;
+        case WiFiDirectAdvertisementPublisherStatus::Started: statusStr = L"Started"; break;
+        case WiFiDirectAdvertisementPublisherStatus::Stopped: statusStr = L"Stopped"; break;
+        case WiFiDirectAdvertisementPublisherStatus::Aborted: statusStr = L"Aborted"; break;
+        default: statusStr = L"Unknown(" + std::to_wstring(static_cast<int>(args.Status())) + L")"; break;
+        }
+        LogMessage(L"Advertisement Status: " + statusStr +
             L" Error: " + std::to_wstring(static_cast<int>(args.Error())));
     });
 
@@ -112,18 +141,46 @@ void RunAdvertiserMode()
                 WiFiDirectConnectionListener const&,
                 WiFiDirectConnectionRequestedEventArgs const& args)
         {
+            // Run connection handling in a separate thread to avoid blocking the event handler
+            std::thread([&connectedDevices, &devicesMutex, &listenerSocket, goIntent, args]()
+            {
             try
             {
                 auto connectionRequest = args.GetConnectionRequest();
                 std::wstring deviceName = connectionRequest.DeviceInformation().Name().c_str();
+                std::wstring deviceId = connectionRequest.DeviceInformation().Id().c_str();
                 LogMessage(L"Connection request received from " + deviceName);
+                LogMessage(L"Device ID: " + deviceId);
                 LogMessage(L"Auto-accepting connection...");
 
                 WiFiDirectConnectionParameters connectionParams;
                 connectionParams.GroupOwnerIntent(goIntent);
 
-                auto wfdDevice = WiFiDirectDevice::FromIdAsync(
-                    connectionRequest.DeviceInformation().Id(), connectionParams).get();
+                // Configure preferred pairing procedure for Android compatibility
+                // Accept all WPS methods: PBC (Push Button), PIN Display, PIN Keypad
+                auto pairingKinds =
+                    winrt::Windows::Devices::Enumeration::DevicePairingKinds::None |
+                    winrt::Windows::Devices::Enumeration::DevicePairingKinds::ConfirmOnly |
+                    winrt::Windows::Devices::Enumeration::DevicePairingKinds::ConfirmPinMatch;
+                connectionParams.PreferredPairingProcedure(
+                    WiFiDirectPairingProcedure::GroupOwnerNegotiation);
+
+                LogMessage(L"Starting FromIdAsync for device: " + deviceName);
+
+                auto asyncOp = WiFiDirectDevice::FromIdAsync(
+                    connectionRequest.DeviceInformation().Id(), connectionParams);
+
+                // Wait with timeout (30 seconds) to avoid hanging indefinitely
+                auto status = asyncOp.wait_for(std::chrono::seconds(30));
+                if (status != winrt::Windows::Foundation::AsyncStatus::Completed)
+                {
+                    LogMessage(L"FromIdAsync timed out or failed for " + deviceName +
+                        L", status=" + std::to_wstring(static_cast<int>(status)), true);
+                    try { asyncOp.Cancel(); } catch (...) {}
+                    return;
+                }
+
+                auto wfdDevice = asyncOp.GetResults();
 
                 wfdDevice.ConnectionStatusChanged(
                     [](WiFiDirectDevice const& sender, auto const&)
@@ -189,8 +246,15 @@ void RunAdvertiserMode()
             }
             catch (const winrt::hresult_error& e)
             {
-                LogMessage(L"Connect operation threw an exception: " + std::wstring(e.message().c_str()), true);
+                LogMessage(L"Connect operation threw an exception (HRESULT 0x" +
+                    [](HRESULT hr) {
+                        wchar_t buf[16];
+                        swprintf_s(buf, L"%08X", static_cast<unsigned int>(hr));
+                        return std::wstring(buf);
+                    }(e.code()) +
+                    L"): " + std::wstring(e.message().c_str()), true);
             }
+            }).detach();
         });
     }
 
